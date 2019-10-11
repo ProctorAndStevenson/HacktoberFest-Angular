@@ -1,0 +1,18 @@
+button, a.button {
+  &.primary {
+    // font-size: 1rem;
+    font-size: 0.875rem;
+    line-height: 1.143rem;
+    padding: 14px 15px 13px;
+    color: White;
+    background-color: #004e9a;
+    outline: none;
+    border-radius: 3px;
+    border: 0px;
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-block;
+
+    text-align: center;
+  }
+}
