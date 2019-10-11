@@ -1,4 +1,4 @@
-import {Component, OnInit, ViewEncapsulation} from '@angular/core';
+import {Component, Input, OnInit, ViewEncapsulation} from '@angular/core';
 
 @Component({
   selector: 'app-back-button',
@@ -8,6 +8,7 @@ import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 })
 export class BackButtonComponent implements OnInit {
 
+  @Input() url = '/';
   constructor() { }
 
   ngOnInit() {
