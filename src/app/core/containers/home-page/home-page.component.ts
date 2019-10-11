@@ -1,5 +1,5 @@
 import {Component, OnInit, ViewEncapsulation} from '@angular/core';
-import {CardModel} from '../../components/card/card.model';
+import { cardsData } from '../../data';
 
 @Component({
   selector: 'app-home-page',
@@ -9,16 +9,7 @@ import {CardModel} from '../../components/card/card.model';
 })
 export class HomePageComponent implements OnInit {
 
-  public cards: Array<CardModel> = [
-    //  Add your card in this section
-    {
-      artName: 'dummy',
-      pageLink: '/dummy',
-      imageLink: './assets/dummy.png',
-      author: 'Dummy',
-      githubLink: 'https://github.com/'
-    },
-  ];
+  public cards = cardsData;
 
   constructor() { }
 
