@@ -5,9 +5,15 @@ on: [push]
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
     - uses: actions/checkout@v1
     - name: config npm registry
-      run: env
+      run: npm config set registry https://registry.npmjs.org/
+    - name: Run npm install
+      run: npm install -y
+    - name: Build things
+      run: npm run build
+    - name: Deploy things
+      run: npm run deploy
