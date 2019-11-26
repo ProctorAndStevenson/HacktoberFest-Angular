@@ -1,9 +1,0 @@
-<li class="card">
-  <a [routerLink]="card.pageLink">
-    <img class="card__image" [src]="card.imageLink" [attr.alt]="card.artName" />
-    </a>
-  <div class="card__content">
-    <a [routerLink]="card.pageLink"><h3 class="card__title" [innerHTML]="card.artName"></h3></a>
-    <p class='card__author'><a [href]="card.githubLink" target="_blank"><i class="fab fa-github"></i>{{card.author}}</a> </p>
-    </div>
-</li>
