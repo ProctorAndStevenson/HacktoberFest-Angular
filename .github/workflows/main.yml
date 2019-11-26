@@ -9,6 +9,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
+    - name: config npm registry
+      run: npm config set registry https://registry.npmjs.org/
     - name: Run npm install
       run: npm install -y
     - name: Build things
